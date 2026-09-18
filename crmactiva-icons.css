@@ -1,0 +1,10 @@
+/* Iconos vectoriales uniformes: heredan el color del elemento y no dependen de glifos del sistema. */
+.crm-icon{display:inline-block;width:18px;height:18px;flex:0 0 18px;vertical-align:-.2em;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.features span{display:inline-flex;align-items:center;gap:7px}.features span:before{content:none!important}.features .crm-icon{width:17px;height:17px;color:#2673a6}
+.info strong .crm-icon{width:15px;height:15px;margin-right:4px;color:#276a9b}
+.actions .button{gap:10px}.actions .crm-icon{width:18px;height:18px;flex:0 0 18px}.actions .whatsapp .crm-icon{fill:currentColor;stroke:none}
+.symbol{font-size:0}.symbol .crm-icon{width:27px;height:27px;flex-basis:27px;stroke-width:1.8}
+.why-points strong .crm-icon{width:17px;height:17px;margin-right:7px;color:#a3d9f0}
+.social-links a{display:grid;place-items:center;overflow:hidden}.social-links .crm-icon{width:23px;height:23px;flex-basis:23px;stroke:none;fill:#fff}.social-links a[aria-label='Snapchat'] .crm-icon{fill:#101010}
+.crm-chat-entry .crm-icon{width:27px;height:27px;fill:#fff;stroke:none}.float-whatsapp .crm-icon{width:29px;height:29px;fill:#fff;stroke:none}
+@media(max-width:640px){.features{gap:12px 18px}.features span{justify-content:center}}
