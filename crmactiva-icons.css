@@ -8,3 +8,19 @@
 .social-links a{display:grid;place-items:center;overflow:hidden}.social-links .crm-icon{width:23px;height:23px;flex-basis:23px;stroke:none;fill:#fff}.social-links a[aria-label='Snapchat'] .crm-icon{fill:#101010}
 .crm-chat-entry .crm-icon{width:27px;height:27px;fill:#fff;stroke:none}.float-whatsapp .crm-icon{width:29px;height:29px;fill:#fff;stroke:none}
 @media(max-width:640px){.features{gap:12px 18px}.features span{justify-content:center}}
+/* Formulario: referencia de dos columnas, etiquetas accesibles y campos alineados. */
+#contact-form.contact-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:14px;row-gap:14px;width:100%;max-width:640px;align-items:stretch}
+#contact-form label:not(.privacy){position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+#contact-form input:not([type=checkbox]),#contact-form textarea{grid-column:auto!important;grid-row:auto!important;display:block;width:100%;min-width:0;margin:0;padding:14px 16px;background:#f4fcf8;border:1px solid #d6e7df;border-radius:13px;color:#14243a;font-size:14px;line-height:1.5;box-shadow:none}
+#contact-form input:not([type=checkbox]){min-height:50px}
+#contact-form #contact-name{grid-column:1;grid-row:1}
+#contact-form #contact-phone{grid-column:2;grid-row:1}
+#contact-form #contact-email{grid-column:1;grid-row:2}
+#contact-form #contact-company{grid-column:2;grid-row:2}
+#contact-form #contact-message{grid-column:1/-1!important;grid-row:3!important;min-height:110px;resize:vertical}
+#contact-form .privacy{grid-column:1/-1!important;grid-row:4!important;display:flex;align-items:center;gap:10px;margin:0;font-size:13px}
+#contact-form .privacy input{flex:0 0 auto;margin:0}
+#contact-form button[type=submit]{grid-column:1/-1!important;grid-row:5!important;width:100%;min-height:49px;margin:0;border-radius:999px;background:linear-gradient(105deg,#2bbd6c,#128450);color:#fff!important;box-shadow:0 7px 19px rgba(21,132,80,.16)}
+#contact-form .form-status{grid-column:1/-1!important;grid-row:6!important}
+#contact-form input:focus-visible,#contact-form textarea:focus-visible{outline:2px solid #4aa4ce;outline-offset:2px}
+@media(max-width:520px){#contact-form.contact-form{grid-template-columns:minmax(0,1fr)}#contact-form #contact-name,#contact-form #contact-phone,#contact-form #contact-email,#contact-form #contact-company,#contact-form #contact-message,#contact-form .privacy,#contact-form button[type=submit],#contact-form .form-status{grid-column:1/-1!important;grid-row:auto!important}}
