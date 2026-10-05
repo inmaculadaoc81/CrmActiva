@@ -1,1 +1,21 @@
-{"cleanUrls":true,"trailingSlash":false}
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/:wp(.*-sitemap\\d*\\.xml)",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/((?!(?:crm-hero-pattern\\.svg|crmactiva-icons\\.css|crmactiva-icons\\.js|crm-hero-pattern|crmactiva-icons|crmactiva\\.css|crmactiva\\.js|package\\.json|sitemap\\.xml|vercel\\.json|index\\.html|README\\.txt|robots\\.txt|crmactiva|_vercel|package|sitemap|README|robots|vercel|index|api|img)(?:[/.]|$)).+)",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
